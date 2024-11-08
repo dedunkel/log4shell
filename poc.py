@@ -77,7 +77,7 @@ def launch_ldap_server(target_ip, http_port):
     try:
         subprocess.run(ldap_cmd, check=True)
     except subprocess.CalledProcessError as e:
-        print(f"[-] Error occurred while starting LDAP server: {e}")
+        print(f"? LDAP server를 시작하는 데에 에러가 발생했습니다. : {e}")
         
     subprocess.run(ldap_cmd, check=True)
 

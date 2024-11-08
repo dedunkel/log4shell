@@ -17,6 +17,9 @@ public class writeServlet extends HttpServlet {
 
         String title = req.getParameter("title");
         String content = req.getParameter("content");
+        System.out.println("title : " + title);
+        System.out.println("content : " + content);
+
         
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
@@ -27,7 +30,7 @@ public class writeServlet extends HttpServlet {
         
         logger.error("Received request with title: " + title + " and content: " + content);
         out.println("<code> ! HI ! </u> </code>");
-    }
+    }	
 
     public void destroy() {
     }
