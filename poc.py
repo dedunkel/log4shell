@@ -79,8 +79,7 @@ def launch_ldap_server(target_ip, http_port):
     except subprocess.CalledProcessError as e:
         print(f"? LDAP server를 시작하는 데에 에러가 발생했습니다. : {e}")
         
-    subprocess.run(ldap_cmd, check=True)
-
+    
 
 def main():
     parser = argparse.ArgumentParser(description="Log4Shell 개념 증명 코드")

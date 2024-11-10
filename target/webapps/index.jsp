@@ -50,7 +50,7 @@
         </style>
 </head>
 <body>
-    <form action="/write" method="POST">
+    <form action="/write" method="post" enctype="multipart/form-data">
         <table>
             <tr><td colspan="2"><h2>Write</h2></td></tr>
             <tr><td class="header">Title</td></tr>
